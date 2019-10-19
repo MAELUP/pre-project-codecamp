@@ -5,33 +5,40 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=yes">
         <link rel="stylesheet" type="text/css" href="styleSheet.css">
+        <script src="jsSheet.js"></script>
 
     </head>
-    <body class="center font-size-re bodyColor" >
-            <img src="./picture.jpg" class="center img-circle">
+    <body id="content" class="center font-size-re bodyColor">
+        <div class="margin-40">
+            <img src="./picture.jpg" class="margin-40 center img-circle">
             <h2>Profile</h2>
-            <p>Full Name :Rapepat Pengsart</p>
-            <p>Name : Pluem</p>
+            <p>Full Name : <span id="myFullName" onmouseover="overText(this)" onmouseout="outText(this)" onclick="clickText(myFullName)">Rapepat Pengsart</span></p>
+            <p>Name : <span id="myName" onmouseover="overText(this)" onmouseout="outText(this)" onclick="clickText(myName)">Pluem</span></p>
             <hr>
             <h2>Education</h2>
             <ul>
-                <li>King Mongkut's University of Technology Thonburi</li>
-                    <p>Bachelor of Science : Information Technology</p>    
-                    <p>2017-Present</p>  
-                <li>Benchama Rat Rangsarit Chachoengsao School</li>
-                    <p>Sciences and Mathematics Program</p>
-                    <p>2011-2017</p>
+                <li><span id="myEdu_1" onmouseover="overText(this)"onmouseout="outText(this)" onclick="clickText(myEdu_1)">King Mongkut's University of Technology Thonburi</span></li>
+                    <p><span id="myEduPro_1" onmouseover="overText(this)" onmouseout="outText(this)" onclick="clickText(myEduPro_1)">Bachelor of Science : Information Technology</span></p>    
+                    <p><span id="myEduDate_1" onmouseover="overText(this)" onmouseout="outText(this)" onclick="clickText(myEduDate_1)">2017-Present</span></p>  
+                <li><span id="myEdu_2" onmouseover="overText(this)" onmouseout="outText(this)" onclick="clickText(myEdu_2)">Benchama Rat Rangsarit Chachoengsao School</span></li>
+                    <p><span id="myEduPro_2" onmouseover="overText(this)" onmouseout="outText(this)" onclick="clickText(myEduPro_2)">Sciences and Mathematics Program</span></p>
+                    <p><span id="myEduDate_2" onmouseover="overText(this)" onmouseout="outText(this)" onclick="clickText(myEduDate_2)">2011-2017</span></p>
             </ul>
             <hr>
             <h2>Skills</h2>
-            <ul>
+            <ul id="mySkill">
                 <li>Network Associate</li>
                 <li>Linux Associate</li>
                 <li>Docker</li>
                 <li>Java</li>
                 <li>OracleSQL</li>
             </ul>
+            <button class="buttoncolor buttoncolorGreen" onclick="myAddSkill()">ADD</button>
+            <button class="buttoncolor buttoncolorRed" onclick="myRemoveSkill()">REMOVE</button>
+            <hr>
+            <button class="buttoncolor buttoncolorBlack" onclick="myChangeBackgroundColor()">CHANGE BACKGROUND COLOR</button>
             <hr>
         </div>
     </body>
 </html>
+
