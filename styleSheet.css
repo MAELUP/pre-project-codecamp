@@ -1,27 +1,32 @@
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 550px;
-  }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 p{
-    margin-left:20px;
+  margin-left:20px;
+}
+
+.margin-40{
+  margin-top: 40px; 
+  margin-bottom: 40px;
 }
 
 .img-circle{
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 body{
-  margin:0;
+margin:0;
 }
 
 .bodyColor{
-    background: rgb(83,70,102);
-    background: linear-gradient(118deg, rgba(83,70,102,1) 0%, rgba(205,118,114,1) 100%);
+  background: rgb(83,70,102);
+  background: linear-gradient(118deg, rgba(83,70,102,1) 0%, rgba(205,118,114,1) 100%);
 }
-    
+  
 .font-size-re{
 font-size: 135%;
 font-weight: normal;
@@ -29,7 +34,4 @@ text-align:left;
 color: aliceblue;
 font-family: Monospace;
 }
-
-
-  
   
